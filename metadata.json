@@ -1,0 +1,6 @@
+{
+  "name": "W Messenger",
+  "description": "Next-generation secure, modern messaging application with responsive mobile and desktop layouts, real-time private conversations, user profiles, and clean UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

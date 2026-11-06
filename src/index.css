@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-w-blue-50: #eff6ff;
+  --color-w-blue-100: #dbeafe;
+  --color-w-blue-400: #60a5fa;
+  --color-w-blue-500: #3b82f6;
+  --color-w-blue-600: #2563eb;
+  --color-w-blue-700: #1d4ed8;
+  --color-w-navy-800: #0f1d38;
+  --color-w-navy-900: #0a1329;
+  --color-w-navy-950: #060b18;
+}
+
+/* Custom scrollbars for chat feeds */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Smooth chat transitions */
+.chat-bubble-tail-sent {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+
+.chat-bubble-tail-received {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
